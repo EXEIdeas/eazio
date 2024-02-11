@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 import '../themes/colors.dart';
+import '../widgets/chart.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -601,6 +602,27 @@ class _DashboardState extends State<Dashboard> {
             height: 30,
             thickness: 1,
             color: CustomColor.grey,
+          ),
+          Row(
+            children: [
+              const SizedBox(
+                width: 10,
+              ),
+              RotatedBox(
+                quarterTurns: 3,
+                child: Text(
+                  "Attendance",
+                  style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.bold, color: Colors.grey, letterSpacing: -0.5),
+                ),
+              ),
+              Expanded(child: AttendanceChart()),
+            ],
+          ),
+          Center(
+            child: Text(
+              "This Week",
+              style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.bold, color: Colors.grey, letterSpacing: -0.5),
+            ),
           ),
           const Divider(
             height: 30,

@@ -13,21 +13,21 @@ class AppBarWidget {
           onPressed: () {},
           icon: ImageIcon(
             const AssetImage("assets/bell.png"),
-            size: 8.w,
-          ),
-        ),
-        IconButton(
-          onPressed: () {},
-          icon: ImageIcon(
-            const AssetImage("assets/chat.png"),
             size: 7.w,
           ),
         ),
         IconButton(
           onPressed: () {},
           icon: ImageIcon(
+            const AssetImage("assets/chat.png"),
+            size: 6.w,
+          ),
+        ),
+        IconButton(
+          onPressed: () {},
+          icon: ImageIcon(
             const AssetImage("assets/menu.png"),
-            size: 8.w,
+            size: 7.w,
           ),
         ),
         const SizedBox(
